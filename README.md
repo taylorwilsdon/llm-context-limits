@@ -53,7 +53,7 @@ Through official DeepSeek API. Self-hosted supports 128k.
 
 ---
 
-### Qwen2.5 API Model Reference
+### Qwen API Model Reference
 
 Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
 
@@ -61,6 +61,8 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 |---------------------------|---------------|-------------------|---------------------|-----------------|
 | **qwen2.5-coder-32b**     | 131,072 tokens | 8K tokens        | ✅ Yes              | ❌ No           |
 | **qwen2.5-72b-instruct**  | 131,072 tokens | 8,192 tokens     | ✅ Yes              | ❌ No           |
+| **qwen2.5-3b**  | 32,768 tokens (default, 128k possible) | 8,192 tokens     | ✅ Yes              | ❌ No           |
+| **qwq**  | 32,768 tokens | 8,000 tokens     | ✅ Yes              | ❌ No           |
 
 ---
 
