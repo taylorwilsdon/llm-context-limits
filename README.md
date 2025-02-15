@@ -1,6 +1,6 @@
-# OpenAI, Anthropic & Deepseek - API Limits & Compatibility
-## The missing OpenAI API Model Parameters Reference
-Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI.
+# OpenAI, Anthropic, Qwen2.5, Mistral & Deepseek - API Limits & Compatibility
+## The missing context limit & parameter support guide for local and hosted LLMs
+Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update and I'll happily merge once confirmed accurate.
 
 Are you using [open-webui](https://github.com/open-webui/open-webui)? You should configure the max context window in the Settings -> Models interface under advanced parameters, otherwise you will always default to 2048 characters which is far too small for many uses. 
 
