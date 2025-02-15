@@ -37,10 +37,10 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 # DeepSeek API Model Reference
 Through official DeepSeek API. Self-hosted supports 128k.
 
-| Model               | Context Window | Max CoT Tokens | Max Output Tokens | 1M Tokens Input Price (Cache Hit) | 1M Tokens Input Price (Cache Miss) | 1M Tokens Output Price |
-|---------------------|---------------|---------------|-------------------|----------------------------------|----------------------------------|------------------------|
-| **deepseek-chat**   | 64K tokens    | -             | 8K tokens        | $0.07                            | $0.27                            | $1.10                  |
-| **deepseek-reasoner** | 64K tokens  | 32K tokens    | 8K tokens        | $0.14                            | $0.55                            | $2.19                  |
+| Model               | Context Window | Max CoT Tokens | Max Output Tokens | Supports Streaming? | Vision Support? |
+|---------------------|---------------|---------------|-------------------|---------------------|-----------------|
+| **deepseek-chat**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
+| **deepseek-reasoner** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
 
 # OpenAI API Model Endpoint Compatibility
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
