@@ -78,6 +78,14 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 ---
 
+### Other Model Reference
+
+| Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
+|------------------------------|---------------|-------------------|---------------------|-----------------|
+| **Llama3.3:70b**   | 131,072 tokens | 2,048 tokens      | ✅ Yes              | ❌ No           |
+| **Phi4**           | 16,384 tokens | 16,384 tokens (*combined window - 16k total split between input & output)      | ✅ Yes              | ❌ No           |
+
+
 ### OpenAI API Model Endpoint Compatibility
 
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
