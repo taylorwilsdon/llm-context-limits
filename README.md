@@ -39,8 +39,8 @@ Through official DeepSeek API. Self-hosted supports 128k.
 
 | Model               | Context Window | Max CoT Tokens | Max Output Tokens | Supports Streaming? | Vision Support? |
 |---------------------|---------------|---------------|-------------------|---------------------|-----------------|
-| **deepseek-chat**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
-| **deepseek-reasoner** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
+| **deepseek-chat (deepseek v3)**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
+| **deepseek-reasoner (deepseek r1)** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
 
 # OpenAI API Model Endpoint Compatibility
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
