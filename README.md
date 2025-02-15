@@ -5,8 +5,8 @@ Since OpenAI won't just be normal and give us this, put together a quick referen
 
 | Model Name          | Max Context Length | Max Input Tokens | Max Output Tokens | Supports Temperature | Supports Streaming |
 |---------------------|--------------------|------------------|-------------------|----------------------|--------------------|
-| **gpt-4**           | 8,192 tokens       | 8,192 tokens     | 8,192 tokens      | Yes                  | Yes                |
-| **gpt-4-32k**       | 32,768 tokens      | 32,768 tokens    | 32,768 tokens     | Yes                  | Yes                |
+| **gpt-4**           | 8,192 tokens       | 8,192 tokens     | 4k tokens      | Yes                  | Yes                |
+| **gpt-4o**       | 128k tokens      | 32,768 tokens    | 16k tokens     | Yes                  | Yes                |
 | **gpt-3.5-turbo**   | 4,096 tokens       | 4,096 tokens     | 4,096 tokens      | Yes                  | Yes                |
 | **gpt-3.5-turbo-16k**| 16,384 tokens      | 16,384 tokens    | 16,384 tokens     | Yes                  | Yes                |
 | **o1-preview**| 128k tokens       | 4,096 tokens     | 32k tokens      | Yes                  | Yes                |
