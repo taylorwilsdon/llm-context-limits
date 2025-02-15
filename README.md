@@ -1,4 +1,4 @@
-# OpenAI API Limits & Compatibility
+# OpenAI, Anthropic & Beyond - API Limits & Compatibility
 ## The missing OpenAI API Model Parameters Reference
 Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI.
 
@@ -15,6 +15,23 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **o1-mini**  | 128k tokens   | 65,536 tokens    | ✅ Yes               | ✅ Yes              |
 | **o1-preview** | 128k tokens | 32,768 tokens    | ❌ No               | ✅ Yes              |
 
+# Anthropic API Model Reference
+| Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? | Message Batches API? |
+|------------------------|---------------|-------------------|----------------------|---------------------|-----------------|----------------------|
+| **Claude 3.5 Sonnet**  | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
+| **Claude 3.5 Haiku**   | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ❌ No           | ✅ Yes               |
+| **Claude 3 Opus**      | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
+| **Claude 3 Sonnet**    | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ❌ No                |
+| **Claude 3 Haiku**     | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
+
+- **Training Data Cut-off:**
+  - Claude 3.5 Sonnet: April 2024  
+  - Claude 3.5 Haiku: July 2024  
+  - Claude 3 Opus: August 2023  
+  - Claude 3 Sonnet: August 2023  
+  - Claude 3 Haiku: August 2023  
+
+All models listed above support temperature adjustments and streaming responses.
 # OpenAI API Model Endpoint Compatibility
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
 
