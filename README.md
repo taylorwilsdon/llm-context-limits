@@ -1,10 +1,14 @@
 # OpenAI, Anthropic, Qwen2.5, Mistral & Deepseek - API Limits & Compatibility
-## The missing context limit & parameter support guide for local and hosted LLMs
-Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update and I'll happily merge once confirmed accurate.
 
-Are you using [open-webui](https://github.com/open-webui/open-webui)? You should configure the max context window in the Settings -> Models interface under advanced parameters, otherwise you will always default to 2048 characters which is far too small for many uses. 
+## The missing context limit & parameter support guide for local and hosted LLMs
+
+Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps others can benefit from. This table represents the max current context window length, max input token, and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update, and I'll happily merge once confirmed accurate.
+
+Are you using [open-webui](https://github.com/open-webui/open-webui)? You should configure the max context window in the **Settings -> Models** interface under advanced parameters; otherwise, you will always default to 2048 characters, which is far too small for many uses.
 
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
+
+### OpenAI API Model Reference
 
 | Model         | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? |
 |--------------|---------------|-------------------|----------------------|---------------------|
@@ -17,7 +21,9 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **o1-mini**  | 128k tokens   | 65,536 tokens    | ✅ Yes               | ✅ Yes              |
 | **o1-preview** | 128k tokens | 32,768 tokens    | ❌ No               | ✅ Yes              |
 
-# Anthropic API Model Reference
+---
+
+### Anthropic API Model Reference
 
 | Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? |
 |------------------------|---------------|-------------------|----------------------|---------------------|-----------------|
@@ -27,31 +33,40 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **Claude 3 Sonnet**    | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 | **Claude 3 Haiku**     | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 
-- **Training Data Cut-off:**
-  - Claude 3.5 Sonnet: April 2024  
-  - Claude 3.5 Haiku: July 2024  
-  - Claude 3 Opus: August 2023  
-  - Claude 3 Sonnet: August 2023  
-  - Claude 3 Haiku: August 2023  
+#### Training Data Cut-off:
+- Claude 3.5 Sonnet: April 2024  
+- Claude 3.5 Haiku: July 2024  
+- Claude 3 Opus: August 2023  
+- Claude 3 Sonnet: August 2023  
+- Claude 3 Haiku: August 2023  
 
-# DeepSeek API Model Reference
+---
+
+### DeepSeek API Model Reference
+
 Through official DeepSeek API. Self-hosted supports 128k.
 
-| Model               | Context Window | Max CoT Tokens | Max Output Tokens | Supports Streaming? | Vision Support? |
-|---------------------|---------------|---------------|-------------------|---------------------|-----------------|
+| Model                        | Context Window | Max CoT Tokens | Max Output Tokens | Supports Streaming? | Vision Support? |
+|------------------------------|---------------|---------------|-------------------|---------------------|-----------------|
 | **deepseek-chat (deepseek v3)**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
 | **deepseek-reasoner (deepseek r1)** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
 
-# Qwen2.5 API Model Reference
-Self hosted maximums. Please note that you must configure your inference engine to these maximums, the default (ie Ollama @ 2048 tokens) is generally much lower than the model maximum.
+---
+
+### Qwen2.5 API Model Reference
+
+Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
 
 | Model                     | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |---------------------------|---------------|-------------------|---------------------|-----------------|
 | **qwen2.5-coder-32b**     | 131,072 tokens | 8K tokens        | ✅ Yes              | ❌ No           |
 | **qwen2.5-72b-instruct**  | 131,072 tokens | 8,192 tokens     | ✅ Yes              | ❌ No           |
 
-# Mistral API Model Reference
-Self hosted maximums. Please note that you must configure your inference engine to these maximums, the default (ie Ollama @ 2048 tokens) is generally much lower than the model maximum.
+---
+
+### Mistral API Model Reference
+
+Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
 
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
@@ -61,8 +76,10 @@ Self hosted maximums. Please note that you must configure your inference engine 
 | **Mistral Large**            | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
 | **Mistral Nemo**             | 128,000 tokens | 4,096 tokens     | ✅ Yes              | ❌ No           |
 
+---
 
-# OpenAI API Model Endpoint Compatibility
+### OpenAI API Model Endpoint Compatibility
+
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
 
 | Endpoint                     | Compatible Models |
