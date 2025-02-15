@@ -1,10 +1,10 @@
-# OpenAI, Anthropic & Beyond - API Limits & Compatibility
+# OpenAI, Anthropic & Deepseek - API Limits & Compatibility
 ## The missing OpenAI API Model Parameters Reference
 Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI.
 
 Are you using [open-webui](https://github.com/open-webui/open-webui)? You should configure the max context window in the Settings -> Models interface under advanced parameters, otherwise you will always default to 2048 characters which is far too small for many uses. 
 
-This table provides a quick reference to the key parameters of OpenAI's available API-driven models.
+This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
 
 | Model         | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? |
 |--------------|---------------|-------------------|----------------------|---------------------|
@@ -34,7 +34,14 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
   - Claude 3 Sonnet: August 2023  
   - Claude 3 Haiku: August 2023  
 
-All models listed above support temperature adjustments and streaming responses.
+# DeepSeek API Model Reference
+Through official DeepSeek API. Self-hosted supports 128k.
+
+| Model               | Context Window | Max CoT Tokens | Max Output Tokens | 1M Tokens Input Price (Cache Hit) | 1M Tokens Input Price (Cache Miss) | 1M Tokens Output Price |
+|---------------------|---------------|---------------|-------------------|----------------------------------|----------------------------------|------------------------|
+| **deepseek-chat**   | 64K tokens    | -             | 8K tokens        | $0.07                            | $0.27                            | $1.10                  |
+| **deepseek-reasoner** | 64K tokens  | 32K tokens    | 8K tokens        | $0.14                            | $0.55                            | $2.19                  |
+
 # OpenAI API Model Endpoint Compatibility
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
 
