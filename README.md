@@ -2,6 +2,8 @@
 ## The missing OpenAI API Model Parameters Reference
 Since OpenAI won't just be normal and give us this, put together a quick reference for my own use that perhaps other can benefit from. This table represents the the max current context window length, max input token and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI.
 
+Are you using open-webui/open-webui? You should configure the max context window in the Settings -> Models interface under advanced parameters, otherwise you will always default to 2048 characters which is far too small for many uses. 
+
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models.
 
 | Model         | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? |
