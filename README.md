@@ -42,6 +42,26 @@ Through official DeepSeek API. Self-hosted supports 128k.
 | **deepseek-chat (deepseek v3)**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
 | **deepseek-reasoner (deepseek r1)** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
 
+# Qwen2.5 API Model Reference
+Self hosted maximums. Please note that you must configure your inference engine to these maximums, the default (ie Ollama @ 2048 tokens) is generally much lower than the model maximum.
+
+| Model                     | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
+|---------------------------|---------------|-------------------|---------------------|-----------------|
+| **qwen2.5-coder-32b**     | 131,072 tokens | 8K tokens        | ✅ Yes              | ❌ No           |
+| **qwen2.5-72b-instruct**  | 131,072 tokens | 8,192 tokens     | ✅ Yes              | ❌ No           |
+
+# Mistral API Model Reference
+Self hosted maximums. Please note that you must configure your inference engine to these maximums, the default (ie Ollama @ 2048 tokens) is generally much lower than the model maximum.
+
+| Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
+|------------------------------|---------------|-------------------|---------------------|-----------------|
+| **Mistral-7B-Instruct-v0**   | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Medium**           | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Small**            | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Large**            | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Nemo**             | 128,000 tokens | 4,096 tokens     | ✅ Yes              | ❌ No           |
+
+
 # OpenAI API Model Endpoint Compatibility
 This table provides a reference for which models are compatible with various OpenAI API endpoints.
 
