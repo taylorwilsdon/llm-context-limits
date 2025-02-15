@@ -18,13 +18,14 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **o1-preview** | 128k tokens | 32,768 tokens    | ❌ No               | ✅ Yes              |
 
 # Anthropic API Model Reference
-| Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? | Message Batches API? |
-|------------------------|---------------|-------------------|----------------------|---------------------|-----------------|----------------------|
-| **Claude 3.5 Sonnet**  | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
-| **Claude 3.5 Haiku**   | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ❌ No           | ✅ Yes               |
-| **Claude 3 Opus**      | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
-| **Claude 3 Sonnet**    | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ❌ No                |
-| **Claude 3 Haiku**     | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          | ✅ Yes               |
+
+| Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? |
+|------------------------|---------------|-------------------|----------------------|---------------------|-----------------|
+| **Claude 3.5 Sonnet**  | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3.5 Haiku**   | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ❌ No           |
+| **Claude 3 Opus**      | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3 Sonnet**    | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3 Haiku**     | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 
 - **Training Data Cut-off:**
   - Claude 3.5 Sonnet: April 2024  
