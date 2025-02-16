@@ -19,7 +19,7 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **o3-mini**  | 200k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
 | **o1**       | 200k tokens   | 100k tokens      | ✅ Yes               | ✅ Yes              |
 | **o1-mini**  | 128k tokens   | 65,536 tokens    | ✅ Yes               | ✅ Yes              |
-| **o1-preview** | 128k tokens | 32,768 tokens    | ❌ No               | ✅ Yes              |
+| **o1-preview** | 128k tokens | 32k tokens    | ❌ No               | ✅ Yes              |
 
 ---
 
@@ -27,11 +27,11 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 
 | Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? |
 |------------------------|---------------|-------------------|----------------------|---------------------|-----------------|
-| **Claude 3.5 Sonnet**  | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
-| **Claude 3.5 Haiku**   | 200k tokens   | 8192 tokens       | ✅ Yes               | ✅ Yes              | ❌ No           |
-| **Claude 3 Opus**      | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
-| **Claude 3 Sonnet**    | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
-| **Claude 3 Haiku**     | 200k tokens   | 4096 tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3.5 Sonnet**  | 200k tokens   | 8k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3.5 Haiku**   | 200k tokens   | 8k tokens       | ✅ Yes               | ✅ Yes              | ❌ No           |
+| **Claude 3 Opus**      | 200k tokens   | 4k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3 Sonnet**    | 200k tokens   | 4k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
+| **Claude 3 Haiku**     | 200k tokens   | 4k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 
 #### Training Data Cut-off:
 - Claude 3.5 Sonnet: April 2024  
@@ -48,8 +48,8 @@ Through official DeepSeek API. Self-hosted supports 128k.
 
 | Model                        | Context Window | Max CoT Tokens | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|---------------|-------------------|---------------------|-----------------|
-| **deepseek-chat (deepseek v3)**   | 64K tokens    | -             | 8K tokens        | ✅ Yes              | ❌ No           |
-| **deepseek-reasoner (deepseek r1)** | 64K tokens  | 32K tokens    | 8K tokens        | ✅ Yes              | ❌ No           |
+| **deepseek-chat (deepseek v3)**   | 64k tokens    | -             | 8k tokens        | ✅ Yes              | ❌ No           |
+| **deepseek-reasoner (deepseek r1)** | 64k tokens  | 32K tokens    | 8k tokens        | ✅ Yes              | ❌ No           |
 
 ---
 
@@ -59,10 +59,10 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 | Model                     | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |---------------------------|---------------|-------------------|---------------------|-----------------|
-| **qwen2.5-coder-32b**     | 131,072 tokens | 8K tokens        | ✅ Yes              | ❌ No           |
-| **qwen2.5-72b-instruct**  | 131,072 tokens | 8,192 tokens     | ✅ Yes              | ❌ No           |
-| **qwen2.5-3b**  | 32,768 tokens (default, 128k possible) | 8,192 tokens     | ✅ Yes              | ❌ No           |
-| **qwq**  | 32,768 tokens | 8,000 tokens     | ✅ Yes              | ❌ No           |
+| **qwen2.5-coder-32b**     | 131,072 tokens | 8k tokens        | ✅ Yes              | ❌ No           |
+| **qwen2.5-72b-instruct**  | 131,072 tokens | 8k tokens     | ✅ Yes              | ❌ No           |
+| **qwen2.5-3b**  | 32k tokens (default, 128k possible) | 8k tokens     | ✅ Yes              | ❌ No           |
+| **qwq**  | 32k tokens | 8k tokens     | ✅ Yes              | ❌ No           |
 
 ---
 
@@ -72,11 +72,11 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
-| **Mistral-7B-Instruct-v0**   | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
-| **Mistral Medium**           | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
-| **Mistral Small**            | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
-| **Mistral Large**            | 32,000 tokens | 4,096 tokens      | ✅ Yes              | ❌ No           |
-| **Mistral Nemo**             | 128,000 tokens | 4,096 tokens     | ✅ Yes              | ❌ No           |
+| **Mistral-7B-Instruct-v0**   | 32k tokens | 4k tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Medium**           | 32k tokens | 4k tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Small**            | 32k tokens | 4k tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Large**            | 32k tokens | 4k tokens      | ✅ Yes              | ❌ No           |
+| **Mistral Nemo**             | 128k tokens | 4k tokens     | ✅ Yes              | ❌ No           |
 
 ---
 
@@ -84,8 +84,8 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
-| **Llama3.3:70b**   | 131,072 tokens | 2,048 tokens      | ✅ Yes              | ❌ No           |
-| **Phi4**           | 16,384 tokens | 16,384 tokens (*combined window - 16k total split between input & output)      | ✅ Yes              | ❌ No           |
+| **Llama3.3:70b**   | 131,072 tokens | 2k tokens      | ✅ Yes              | ❌ No           |
+| **Phi4**           | 16k tokens | 16k tokens (*combined window - 16k total split between input & output)      | ✅ Yes              | ❌ No           |
 
 
 ### OpenAI API Model Endpoint Compatibility
