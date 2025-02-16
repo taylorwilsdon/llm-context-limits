@@ -1,4 +1,4 @@
-# OpenAI, Anthropic, Qwen2.5, Mistral, Deepseek, Llama, Phi & More - API Limits & Compatibility
+# OpenAI, Anthropic, Qwen2.5, Mistral, Deepseek, Llama, Phi & More - API Max Context, Output Token Limits & Feature Compatibility
 
 ## The missing context limit & parameter support guide for local and hosted LLMs
 
