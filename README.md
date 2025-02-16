@@ -62,7 +62,7 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 | **qwen2.5-coder-32b**     | 131,072 tokens | 8k tokens        | ✅ Yes              | ❌ No           |
 | **qwen2.5-72b-instruct**  | 131,072 tokens | 8k tokens     | ✅ Yes              | ❌ No           |
 | **qwen2.5-3b**  | 32k tokens (default, 128k possible) | 8k tokens     | ✅ Yes              | ❌ No           |
-| **qwq-32b**  | 32k tokens | 8k tokens     | ✅ Yes              | ❌ No           |
+| **qwq**  | 32k tokens | 8k tokens     | ✅ Yes              | ❌ No           |
 
 ---
 
