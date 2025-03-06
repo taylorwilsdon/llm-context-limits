@@ -27,6 +27,7 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 
 | Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? |
 |------------------------|---------------|-------------------|----------------------|---------------------|-----------------|
+| **Claude 3.7 Sonnet**  | 200k tokens   | 8k tokens (128k extended w/ output-128k-2025-02-19 header)        | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 | **Claude 3.5 Sonnet**  | 200k tokens   | 8k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 | **Claude 3.5 Haiku**   | 200k tokens   | 8k tokens       | ✅ Yes               | ✅ Yes              | ❌ No           |
 | **Claude 3 Opus**      | 200k tokens   | 4k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
