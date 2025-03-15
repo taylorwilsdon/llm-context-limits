@@ -4,7 +4,13 @@
 
 Since OpenAI won't just be cool and give us a max context and max output parameter in the OpenAI API-compatible models endpoint spec, I put together a quick reference for my own use that perhaps others can benefit from. This table represents the max current context window length, max input token, and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update, and I'll happily merge once confirmed accurate.
 
+> [!TIP]
+Using Ollama? By default, Ollama uses a context window size of 2048 tokens. This can be overridden with the OLLAMA_CONTEXT_LENGTH environment variable. For example, to set the default context length to 8K on startup, use: `OLLAMA_CONTEXT_LENGTH=8192 ollama serve`. Alternatively, create a [MODELFILE](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) that declares the num_ctx to bake it in to an individual model and not have to set on startup.
+
 Are you using [open-webui](https://github.com/open-webui/open-webui)? You can configure the max context window in a persistent manner under the **Settings -> Models** interface under advanced parameters.
+
+> [!WARNING]
+Editor's note - if you don't utilize a [k/v cache](https://www.microsoft.com/en-us/research/blog/llm-profiling-guides-kv-cache-optimization/), setting the max context (even if you're not filling it up) will use up a **ton** of VRAM and potentially degrade performance. I strongly encourage running Ollama with Flash Attention enabled via `OLLAMA_FLASH_ATTENTION=1` & set `OLLAMA_KV_CACHE_TYPE=q8_0` (you can use a q4_0 quant but quality will degrade more)
 
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
 
