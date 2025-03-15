@@ -4,7 +4,7 @@
 
 Since OpenAI won't just be normal and give us a max context and max output parameter in the models endpoint, I put together a quick reference for my own use that perhaps others can benefit from. This table represents the max current context window length, max input token, and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update, and I'll happily merge once confirmed accurate.
 
-Are you using [open-webui](https://github.com/open-webui/open-webui)? You can configure the max context window in a persisten manner under the **Settings -> Models** interface under advanced parameters.
+Are you using [open-webui](https://github.com/open-webui/open-webui)? You can configure the max context window in a persistent manner under the **Settings -> Models** interface under advanced parameters.
 
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
 
@@ -79,6 +79,16 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 | **Mistral Large**            | 32k tokens | 4k tokens      | ✅ Yes              | ❌ No           |
 | **Mistral Nemo**             | 128k tokens | 4k tokens     | ✅ Yes              | ❌ No           |
 
+---
+
+### Gemini API Model Reference
+
+Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
+
+| Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
+|------------------------------|---------------|-------------------|---------------------|-----------------|
+| **gemini-2.0-flash**         | 1,048k tokens | 8k tokens      | ✅ Yes              | ❌ No           |
+| **gemma-3**                  | 128k tokens   | Unclear tokens | ✅ Yes              | ❌ No           |
 ---
 
 ### Other Model Reference
