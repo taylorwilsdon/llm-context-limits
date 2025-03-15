@@ -35,6 +35,7 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **Claude 3 Haiku**     | 200k tokens   | 4k tokens       | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 
 #### Training Data Cut-off:
+- Claude 3.7 Sonnet: October 2024  
 - Claude 3.5 Sonnet: April 2024  
 - Claude 3.5 Haiku: July 2024  
 - Claude 3 Opus: August 2023  
@@ -69,7 +70,7 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 ### Mistral API Model Reference
 
-Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
+Self-hosted maximums.
 
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
@@ -83,7 +84,7 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 
 ### Gemini API Model Reference
 
-Self-hosted maximums. Please note that you must configure your inference engine to these maximums, as the default (e.g., Ollama @ 2048 tokens) is generally much lower than the model maximum.
+Includes Gemini (hosted) and Gemma (self hosted).
 
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
@@ -97,6 +98,7 @@ Self-hosted maximums. Please note that you must configure your inference engine 
 |------------------------------|---------------|-------------------|---------------------|-----------------|
 | **Llama3.3:70b**   | 131,072 tokens | 2k tokens      | ✅ Yes              | ❌ No           |
 | **Phi4**           | 16k tokens | 16k tokens (*combined window - 16k total split between input & output)      | ✅ Yes              | ❌ No           |
+| **Phi4**           | 16k tokens | 16k tokens      | ✅ Yes              | ❌ No           |
 
 
 ### OpenAI API Model Endpoint Compatibility
