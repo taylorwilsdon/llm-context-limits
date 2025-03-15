@@ -1,8 +1,8 @@
-# OpenAI, Anthropic, Qwen2.5, Mistral, Deepseek, Llama, Phi & More - API Max Context, Output Token Limits & Feature Compatibility
+# OpenAI, Anthropic, Qwen, Mistral, Deepseek, Llama, Phi, Gemini & More - API Max Context, Output Token Limits & Feature Compatibility
 
 ## The missing context limit & parameter support guide for local and hosted LLMs
 
-Since OpenAI won't just be normal and give us a max context and max output parameter in the models endpoint, I put together a quick reference for my own use that perhaps others can benefit from. This table represents the max current context window length, max input token, and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update, and I'll happily merge once confirmed accurate.
+Since OpenAI won't just be cool and give us a max context and max output parameter in the OpenAI API-compatible models endpoint spec, I put together a quick reference for my own use that perhaps others can benefit from. This table represents the max current context window length, max input token, and max output token limits for OpenAI via API. This does not apply to ChatGPT through the UI. If anything looks wrong, please flag it or cut a PR to update, and I'll happily merge once confirmed accurate.
 
 Are you using [open-webui](https://github.com/open-webui/open-webui)? You can configure the max context window in a persistent manner under the **Settings -> Models** interface under advanced parameters.
 
