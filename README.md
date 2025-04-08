@@ -95,6 +95,7 @@ Includes Gemini (hosted) and Gemma (self hosted).
 | Model                        | Context Window | Max Output Tokens | Supports Streaming? | Vision Support? |
 |------------------------------|---------------|-------------------|---------------------|-----------------|
 | **gemini-2.0-flash**         | 1,048k tokens | 8k tokens      | ✅ Yes              | ❌ No           |
+| **gemini-2.5-pro**           | 1,048k tokens | 64k tokens     | ✅ Yes              | ❌ No           |
 | **gemma-3**                  | 128k tokens   | Unclear tokens | ✅ Yes              | ❌ No           |
 ---
 
