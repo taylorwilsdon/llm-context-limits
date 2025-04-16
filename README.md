@@ -18,6 +18,7 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 
 | Model         | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? |
 |--------------|---------------|-------------------|----------------------|---------------------|
+| **GPT-4.1** | 1048k tokens | 32k tokens    | ✅ Yes               | ✅ Yes              |
 | **GPT-4o**   | 128k tokens   | 16k tokens       | ✅ Yes               | ✅ Yes              |
 | **GPT-4o-mini** | 128k tokens | 16k tokens       | ✅ Yes               | ✅ Yes              |
 | **GPT-4**    | 128k tokens   | 16k tokens       | ✅ Yes               | ✅ Yes              |
