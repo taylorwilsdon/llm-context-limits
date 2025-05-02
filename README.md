@@ -24,9 +24,12 @@ This table provides a quick reference to the key parameters of OpenAI's availabl
 | **GPT-4**    | 128k tokens   | 16k tokens       | ✅ Yes               | ✅ Yes              |
 | **GPT-3.5-turbo** | 16k tokens | 4k tokens       | ✅ Yes               | ✅ Yes              |
 | **o3-mini**  | 200k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
+| **o4-mini**  | 128k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
 | **o1**       | 200k tokens   | 100k tokens      | ✅ Yes               | ✅ Yes              |
 | **o1-mini**  | 128k tokens   | 65,536 tokens    | ✅ Yes               | ✅ Yes              |
 | **o1-preview** | 128k tokens | 32k tokens    | ❌ No               | ✅ Yes              |
+| **o3**  | 128k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
+
 
 ---
 
