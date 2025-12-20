@@ -13,8 +13,6 @@ Editor's note - if you don't utilize a [k/v cache](https://www.microsoft.com/en-
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
 
 
-### OpenAI API Model Reference
-
 ## OpenAI API Model Reference
 
 Tooling references MCP support.
