@@ -12,25 +12,54 @@ Editor's note - if you don't utilize a [k/v cache](https://www.microsoft.com/en-
 
 This table provides a quick reference to the key parameters of OpenAI's available API-driven models. These values apply to OpenAI's officially hosted API and may not match 3rd party providers.
 
-### OpenAI API Model Reference
 
-| Model         | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? |
-|--------------|---------------|-------------------|----------------------|---------------------|
-| **GPT-4.1** | 1048k tokens | 32k tokens    | ✅ Yes               | ✅ Yes              |
-| **GPT-4.1-mini** | 1048k tokens | 32k tokens    | ✅ Yes               | ✅ Yes              |
-| **GPT-4.1-nano** | 1048k tokens | 32k tokens    | ✅ Yes               | ✅ Yes              |
-| **GPT-4o**   | 128k tokens   | 16k tokens       | ✅ Yes               | ✅ Yes              |
-| **GPT-4o-mini** | 128k tokens | 16k tokens       | ✅ Yes               | ✅ Yes              |
-| **GPT-4**    | 128k tokens   | 16k tokens       | ✅ Yes               | ✅ Yes              |
-| **GPT-3.5-turbo** | 16k tokens | 4k tokens       | ✅ Yes               | ✅ Yes              |
-| **o3-mini**  | 200k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
-| **o4-mini**  | 128k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
-| **o1**       | 200k tokens   | 100k tokens      | ✅ Yes               | ✅ Yes              |
-| **o1-mini**  | 128k tokens   | 65,536 tokens    | ✅ Yes               | ✅ Yes              |
-| **o1-preview** | 128k tokens | 32k tokens    | ❌ No               | ✅ Yes              |
-| **o1-pro** | 200k tokens | 100k tokens    | ❌ No               | ✅ Yes              |
-| **o3**  | 128k tokens   | 100k tokens      | ❌ No               | ✅ Yes              |
+## OpenAI API Model Reference
 
+Tooling references MCP support.
+
+Reasoning Option refers to the LLM API having an option to turn on thinking for the model.
+
+### Core Generative Models
+
+| Model | Context Window (Tokens) | Max Output Tokens | Image Input | Audio Input | Video Input | Tooling Support | Reasoning Option | Notes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| GPT-5.2 Pro | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | Version of GPT-5.2 that produces smarter and more precise responses. |
+| GPT-5.2 | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | The best model for coding and agentic tasks across industries |
+| GPT-5.1 | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | The best model for coding and agentic tasks with configurable reasoning effort |
+| GPT-5.1 Codex Max | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | Our most intelligent coding model optimized for long-horizon, agentic coding tasks. |
+| GPT-5.1 Codex | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | A version of GPT-5.1 optimized for agentic coding in Codex. |
+| GPT-5 Codex | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | A version of GPT-5 optimized for agentic coding in Codex |
+| GPT-5 | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | Previous intelligent reasoning model for coding and agentic tasks with configurable reasoning effort |
+| GPT-5 mini | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | Faster, cost-efficient GPT-5 variant. |
+| GPT-5 nano | 400,000 | 128,000 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ✅ Yes | Fastest, most cost-efficient GPT-5 variant. |
+| GPT-4.1 | 1,047,576 | 32,768 | ✅ Yes | ❌ No | ❌ No | ✅ Yes | ❌ No | Smartest non-reasoning model. |
+| GPT-4.1 mini | 1,047,576 | 32,768 | ✅ Yes | ❌ No | ❌ No | ❌ No | ❌ No | Smaller, faster version of GPT-4.1. |
+| GPT-4.1 nano | 1,047,576 | 32,768 | ✅ Yes | ❌ No | ❌ No | ❌ No | ❌ No | Fastest, most cost-efficient version of GPT-4.1. |
+| GPT-4o | 128,000 | 16,384 | ✅ Yes | ❌ No | ❌ No | ❌ No | ❌ No | Omni-modal predecessor to GPT-5. |
+| GPT-4o mini | 128,000 | 16,384 | ✅ Yes | ❌ No | ❌ No | ❌ No | ❌ No | Fast, affordable small model for focused tasks. |
+| GPT-4 | 8,192 | 8,192 | ❌ No | ❌ No | ❌ No | ❌ No | ❌ No | Older base GPT-4 (Text-only). |
+| GPT-4 Turbo | 128,000 | 4,096 | ✅ Yes | ❌ No | ❌ No | ❌ No | ❌ No | An older high-intelligence GPT model, supports images. |
+| GPT-3.5 Turbo | 16,385 | 4,096 | ❌ No | ❌ No | ❌ No | ❌ No | ❌ No | Legacy GPT model for chat and non-chat tasks. |
+| o1 | 200,000 | 100,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | Previous full o-series reasoning model. |
+| o1 mini | 128,000 | 65,536 | ❌ No | ❌ No | ❌ No | ❌ No | ✅ Yes | Small model alternative to o1 (Deprecated). |
+| o1 Preview | 128,000 | 32,768 | ❌ No | ❌ No | ❌ No | ❌ No | ✅ Yes | Preview of our first o-series reasoning model (Deprecated). |
+| o1 pro | 200,000 | 100,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | Version of o1 with more compute. |
+| o3 | 200,000 | 100,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | Reasoning model for complex tasks, succeeded by GPT-5. |
+| o3 mini | 200,000 | 100,000 | ❌ No | ❌ No | ❌ No | ❌ No | ✅ Yes | A small model alternative to o3. |
+| o4 mini | 200,000 | 100,000 | ✅ Yes | ❌ No | ❌ No | ❌ No | ✅ Yes | Fast, cost-efficient reasoning model, succeeded by GPT-5 mini. |
+
+### Specialized and Non-Generative Models
+
+| Model Name | Category | Multimodal Capability | Notes |
+| :--- | :--- | :--- | :--- |
+| o3 deep research | Deep Research | Unknown | Most powerful deep research model. |
+| GPT Audio | Audio Processing | Audio input/Text output | For audio input/output via Chat Completions API. |
+| GPT-4o mini TTS | Audio (TTS) | Text input/Audio output | Text-to-speech model. |
+| GPT-4o Transcribe | Audio (STT) | Audio input/Text output | Speech-to-text model. |
+| DALL-E 3 | Image Generation | Text input/Image output | Previous generation image generation model. |
+| GPT Image 1 | Image Generation | Text input/Image output | State-of-the-art image generation model. |
+| GPT-OSS 120b | Open-Weight | Text Only | Most powerful open-weight model, fits into an H100 GPU. |
+| GPT-OSS 20b | Open-Weight | Text Only | Medium-sized open-weight model for low latency. |
 
 ---
 
