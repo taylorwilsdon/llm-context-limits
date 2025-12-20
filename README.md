@@ -68,7 +68,6 @@ Reasoning Option refers to the LLM API having an option to turn on thinking for 
 | Model                  | Context Window | Max Output Tokens | Supports Temperature? | Supports Streaming? | Vision Support? |
 |------------------------|---------------|-------------------|----------------------|---------------------|-----------------|
 | **Claude 4.5 Opus**  | 200k tokens   | 64k tokens        | ✅ Yes               | ✅ Yes              | ✅ Yes          |
-
 | **Claude 4.5 Sonnet**  | 200k/1000k (extended) tokens   | 64k tokens        | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 | **Claude 4.0 Sonnet**  | 200k/1000k (extended) tokens   | 64k tokens        | ✅ Yes               | ✅ Yes              | ✅ Yes          |
 | **Claude 3.7 Sonnet**  | 200k tokens   | 8k tokens (128k extended w/ output-128k-2025-02-19 header)        | ✅ Yes               | ✅ Yes              | ✅ Yes          |
